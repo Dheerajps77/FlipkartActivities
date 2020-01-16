@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="0" started-at="2020-01-16T22:51:25Z" finished-at="2020-01-16T22:51:25Z">
+    <groups>
+    </groups>
+  </suite> <!-- Suite -->
+  <suite name="FlipKart Activities (1)" duration-ms="14217" started-at="2020-01-16T22:51:10Z" finished-at="2020-01-16T22:51:24Z">
+    <groups>
+    </groups>
+    <test name="Price Range Of Product" duration-ms="14217" started-at="2020-01-16T22:51:10Z" finished-at="2020-01-16T22:51:24Z">
+      <class name="com.qa.Flipkart.ActivitiesTest.PriceRangeOfProductTest">
+        <test-method status="PASS" signature="openingBrowser()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.PriceRangeOfProductTest@5315b42e]" name="openingBrowser" is-config="true" duration-ms="13441" started-at="2020-01-17T04:20:57Z" finished-at="2020-01-17T04:21:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openingBrowser -->
+        <test-method status="FAIL" signature="verifyProductsPriceTest()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.PriceRangeOfProductTest@5315b42e]" name="verifyProductsPriceTest" duration-ms="14207" started-at="2020-01-17T04:21:10Z" finished-at="2020-01-17T04:21:24Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Price range 20,000 to 40,000' of items test failed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Price range 20,000 to 40,000' of items test failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.qa.Flipkart.ActivitiesTest.PriceRangeOfProductTest.verifyProductsPriceTest(PriceRangeOfProductTest.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1211)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductsPriceTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.PriceRangeOfProductTest@5315b42e]" name="closeBrowser" is-config="true" duration-ms="711" started-at="2020-01-17T04:21:24Z" finished-at="2020-01-17T04:21:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.Flipkart.ActivitiesTest.PriceRangeOfProductTest -->
+    </test> <!-- Price Range Of Product -->
+  </suite> <!-- FlipKart Activities (1) -->
+  <suite name="FlipKart Activities (0)" duration-ms="13218" started-at="2020-01-16T22:50:43Z" finished-at="2020-01-16T22:50:56Z">
+    <groups>
+    </groups>
+    <test name="Products Name" duration-ms="13218" started-at="2020-01-16T22:50:43Z" finished-at="2020-01-16T22:50:56Z">
+      <class name="com.qa.Flipkart.ActivitiesTest.ItemsNameTest">
+        <test-method status="PASS" signature="openingBrowser()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ItemsNameTest@4e04a765]" name="openingBrowser" is-config="true" duration-ms="11903" started-at="2020-01-17T04:20:31Z" finished-at="2020-01-17T04:20:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openingBrowser -->
+        <test-method status="PASS" signature="verifyProductsNameTest()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ItemsNameTest@4e04a765]" name="verifyProductsNameTest" duration-ms="13215" started-at="2020-01-17T04:20:43Z" finished-at="2020-01-17T04:20:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductsNameTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ItemsNameTest@4e04a765]" name="closeBrowser" is-config="true" duration-ms="783" started-at="2020-01-17T04:20:56Z" finished-at="2020-01-17T04:20:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.Flipkart.ActivitiesTest.ItemsNameTest -->
+    </test> <!-- Products Name -->
+  </suite> <!-- FlipKart Activities (0) -->
+  <suite name="FlipKart Activities" duration-ms="9035" started-at="2020-01-16T22:50:21Z" finished-at="2020-01-16T22:50:30Z">
+    <groups>
+    </groups>
+    <test name="Auto Suggest Value" duration-ms="9035" started-at="2020-01-16T22:50:21Z" finished-at="2020-01-16T22:50:30Z">
+      <class name="com.qa.Flipkart.ActivitiesTest.AutoSuggestValueTest">
+        <test-method status="PASS" signature="openingBrowser()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.AutoSuggestValueTest@6bf256fa]" name="openingBrowser" is-config="true" duration-ms="12942" started-at="2020-01-17T04:20:08Z" finished-at="2020-01-17T04:20:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openingBrowser -->
+        <test-method status="PASS" signature="verifyAutoSuggestValueTest()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.AutoSuggestValueTest@6bf256fa]" name="verifyAutoSuggestValueTest" duration-ms="9021" started-at="2020-01-17T04:20:21Z" finished-at="2020-01-17T04:20:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAutoSuggestValueTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.AutoSuggestValueTest@6bf256fa]" name="closeBrowser" is-config="true" duration-ms="681" started-at="2020-01-17T04:20:30Z" finished-at="2020-01-17T04:20:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.Flipkart.ActivitiesTest.AutoSuggestValueTest -->
+    </test> <!-- Auto Suggest Value -->
+  </suite> <!-- FlipKart Activities -->
+</testng-results>

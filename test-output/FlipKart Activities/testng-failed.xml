@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FlipKart Activities]" parallel="none">
+  <test name="Price Range Of Product(failed)" parallel="none">
+    <classes>
+      <class name="com.qa.Flipkart.ActivitiesTest.PriceRangeOfProductTest">
+        <methods>
+          <include name="verifyProductsPriceTest"/>
+          <include name="openingBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.qa.Flipkart.ActivitiesTest.PriceRangeOfProductTest -->
+    </classes>
+  </test> <!-- Price Range Of Product(failed) -->
+</suite> <!-- Failed suite [FlipKart Activities] -->
