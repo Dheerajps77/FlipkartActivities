@@ -35,8 +35,8 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			<plugin>
-				<!--Build an executable JAR -->
+			<!-- <plugin>
+				Build an executable JAR
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 				<version>3.1.0</version>
@@ -49,7 +49,7 @@
 						</manifest>
 					</archive>
 				</configuration>
-			</plugin>
+			</plugin> -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.0.2</version>
@@ -92,7 +92,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>3.13.0</version>
+			<version>4.0.0-alpha-5</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
