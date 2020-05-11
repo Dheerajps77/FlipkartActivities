@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [FlipKart Activities (1)]" parallel="none">
-  <test name="Price Range Of Product(failed)" parallel="none">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
     <classes>
-      <class name="com.qa.Flipkart.ActivitiesTest.PriceRangeOfProductTest">
+      <class name="com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI">
         <methods>
-          <include name="verifyProductsPriceTest"/>
-          <include name="openingBrowser"/>
           <include name="closeBrowser"/>
+          <include name="loginWithDetails" invocation-numbers="1"/>
+          <include name="openingBrowser"/>
         </methods>
-      </class> <!-- com.qa.Flipkart.ActivitiesTest.PriceRangeOfProductTest -->
+      </class> <!-- com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI -->
     </classes>
-  </test> <!-- Price Range Of Product(failed) -->
-</suite> <!-- Failed suite [FlipKart Activities (1)] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
