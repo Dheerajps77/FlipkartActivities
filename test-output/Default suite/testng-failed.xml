@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.qa.Flipkart.ActivitiesTest.ActivitiesTest">
+        <methods>
+          <include name="verifyComputersTabOnPage"/>
+          <include name="verifyDownloadsTabOnPage"/>
+          <include name="verifyLogOutOnPage"/>
+          <include name="verifyAutoSuggestValueTest"/>
+          <include name="verifyProductsPriceTest"/>
+          <include name="verifyGiftOnPage"/>
+          <include name="verifyElectronicTabOnPage"/>
+          <include name="beforeMethod"/>
+          <include name="openingBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.qa.Flipkart.ActivitiesTest.ActivitiesTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

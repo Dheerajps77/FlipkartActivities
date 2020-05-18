@@ -45,7 +45,7 @@
 				<version>3.0.0-M3</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>Mastertestng.xml</suiteXmlFile>
+						<suiteXmlFile>Activities_testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

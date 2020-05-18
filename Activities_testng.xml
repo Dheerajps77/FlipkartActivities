@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Flipkart Activities Suite" verbose="10">
+  <parameter name="browser" value="chrome" />
+  <test name="Flipkart Activities Test">
+    <classes>
+      <class name="com.qa.Flipkart.ActivitiesTest.ActivitiesTest"/>
+    </classes>
+  </test>
+</suite>
