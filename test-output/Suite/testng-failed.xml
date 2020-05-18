@@ -6,8 +6,7 @@
       <class name="com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI">
         <methods>
           <include name="closeBrowser"/>
-          <include name="loginWithDetails" invocation-numbers="1"/>
-          <include name="openingBrowser"/>
+          <include name="loginWithDetails" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI -->
     </classes>

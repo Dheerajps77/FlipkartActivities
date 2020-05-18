@@ -54,7 +54,7 @@ public class PriceRangeInPage {
 	public boolean verifyProductsPriceRange(String differentProductName) throws Exception {
 		boolean flag = false;
 		try {
-			if (objAutoSuggestValuesInPage.clickOnLoginWindow(driver)) {
+			//if (objAutoSuggestValuesInPage.clickOnLoginWindow(driver)) {
 				if (objAutoSuggestValuesInPage.searchProduct(driver)) {
 					if (objAutoSuggestValuesInPage.checkProductValue(driver, differentProductName)) {
 						if (objItemsNameInPage.clicOnSearchButton(driver)) {
@@ -65,7 +65,7 @@ public class PriceRangeInPage {
 							}
 						}
 					}
-				}
+				//}
 			}
 
 		} catch (Exception e) {

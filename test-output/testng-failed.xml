@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
-  <test name="Test(failed)" parallel="none">
+<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Flipkart Activities Suite]" parallel="none">
+  <parameter name="browser" value="chrome"/>
+  <test name="Flipkart Activities Test(failed)" parallel="none">
     <classes>
-      <class name="com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI">
+      <class name="com.qa.Flipkart.ActivitiesTest.ActivitiesTest">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="loginWithDetails" invocation-numbers="1"/>
-          <include name="openingBrowser"/>
+          <include name="verifyProductsNameTest"/>
+          <include name="afterMethod"/>
+          <include name="verifyAutoSuggestValueTest"/>
+          <include name="verifyProductsPriceTest"/>
+          <include name="generateReport"/>
+          <include name="verifyGiftOnPage"/>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
         </methods>
-      </class> <!-- com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI -->
+      </class> <!-- com.qa.Flipkart.ActivitiesTest.ActivitiesTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Flipkart Activities Test(failed) -->
+</suite> <!-- Failed suite [Flipkart Activities Suite] -->

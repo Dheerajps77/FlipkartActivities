@@ -1,75 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" total="3" passed="1">
+<testng-results skipped="1" failed="3" total="12" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="168185" started-at="2020-05-11T14:52:23Z" finished-at="2020-05-11T14:55:11Z">
+  <suite name="Flipkart Activities Suite" duration-ms="81631" started-at="2020-05-18T09:30:00Z" finished-at="2020-05-18T09:31:21Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="168185" started-at="2020-05-11T14:52:23Z" finished-at="2020-05-11T14:55:11Z">
-      <class name="com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI">
-        <test-method status="PASS" signature="openingBrowser()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI@70fda8]" name="openingBrowser" is-config="true" duration-ms="19494" started-at="2020-05-11T20:22:23Z" finished-at="2020-05-11T20:22:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openingBrowser -->
-        <test-method status="PASS" signature="loginWithDetails(java.lang.String, java.lang.String)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI@70fda8]" name="loginWithDetails" duration-ms="5451" started-at="2020-05-11T20:22:42Z" data-provider="dataProvider" finished-at="2020-05-11T20:22:48Z">
+    <test name="Flipkart Activities Test" duration-ms="81631" started-at="2020-05-18T09:30:00Z" finished-at="2020-05-18T09:31:21Z">
+      <class name="com.qa.Flipkart.ActivitiesTest.ActivitiesTest">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeSuite" is-config="true" duration-ms="15946" started-at="2020-05-18T14:59:44Z" finished-at="2020-05-18T15:00:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[nitin1tester@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Nitin98581]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithDetails -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI@70fda8]" name="closeBrowser" is-config="true" duration-ms="220" started-at="2020-05-11T20:22:48Z" finished-at="2020-05-11T20:22:48Z">
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="5352" started-at="2020-05-18T15:00:00Z" finished-at="2020-05-18T15:00:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="openingBrowser()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI@70fda8]" name="openingBrowser" is-config="true" duration-ms="17359" started-at="2020-05-11T20:22:48Z" finished-at="2020-05-11T20:23:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openingBrowser -->
-        <test-method status="FAIL" signature="loginWithDetails(java.lang.String, java.lang.String)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI@70fda8]" name="loginWithDetails" duration-ms="65536" started-at="2020-05-11T20:23:05Z" data-provider="dataProvider" finished-at="2020-05-11T20:24:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pavanoltraini@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test@123x]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="verifyProductsNameTest()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyProductsNameTest" duration-ms="13398" started-at="2020-05-18T15:00:05Z" finished-at="2020-05-18T15:00:18Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Error communicating with the remote browser. It may have died.
-Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
-System info: host: 'DESKTOP-MFEMF1B', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\RAHULS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56442}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 81.0.4044.138, webStorageEnabled: true}
-Session ID: 45b84d7254fe34e9b59e5a4603ccab67]]>
+              <![CDATA[Verify details of product name on Flipkart home page test failed expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
-System info: host: 'DESKTOP-MFEMF1B', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\RAHULS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56442}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 81.0.4044.138, webStorageEnabled: true}
-Session ID: 45b84d7254fe34e9b59e5a4603ccab67
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:333)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:451)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:394)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:325)
-	at com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI.loginWithDetails(DataDrivenWithoutApachePOI.java:52)
+              <![CDATA[java.lang.AssertionError: Verify details of product name on Flipkart home page test failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.qa.Flipkart.ActivitiesTest.ActivitiesTest.verifyProductsNameTest(ActivitiesTest.java:26)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -94,68 +57,44 @@ Session ID: 45b84d7254fe34e9b59e5a4603ccab67
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:47)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	... 29 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:1332 after 60000 ms
-	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
-	at java.util.concurrent.CompletableFuture.get(Unknown Source)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
-	... 38 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:1332 after 60000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithDetails -->
-        <test-method status="FAIL" signature="closeBrowser()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI@70fda8]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2020-05-11T20:24:11Z" finished-at="2020-05-11T20:24:11Z">
-          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+        </test-method> <!-- verifyProductsNameTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="487" started-at="2020-05-18T15:00:18Z" finished-at="2020-05-18T15:00:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProductsNameTest status=FAILURE method=ActivitiesTest.verifyProductsNameTest()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4724" started-at="2020-05-18T15:00:19Z" finished-at="2020-05-18T15:00:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="verifyAutoSuggestValueTest()[pri:1, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyAutoSuggestValueTest" duration-ms="1197" started-at="2020-05-18T15:00:24Z" finished-at="2020-05-18T15:00:25Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Error communicating with the remote browser. It may have died.
-Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
-System info: host: 'DESKTOP-MFEMF1B', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\RAHULS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56442}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 81.0.4044.138, webStorageEnabled: true}
-Session ID: 45b84d7254fe34e9b59e5a4603ccab67]]>
+              <![CDATA[Verify details present of Auto Suggest Value on Flipkart home page test failed expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '4.0.0-alpha-5', revision: 'b3a0d621cc'
-System info: host: 'DESKTOP-MFEMF1B', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\RAHULS~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:56442}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 81.0.4044.138, webStorageEnabled: true}
-Session ID: 45b84d7254fe34e9b59e5a4603ccab67
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:603)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:639)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
-	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:468)
-	at com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI.closeBrowser(DataDrivenWithoutApachePOI.java:38)
+              <![CDATA[java.lang.AssertionError: Verify details present of Auto Suggest Value on Flipkart home page test failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.qa.Flipkart.ActivitiesTest.ActivitiesTest.verifyAutoSuggestValueTest(ActivitiesTest.java:40)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:703)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
@@ -174,63 +113,289 @@ Session ID: 45b84d7254fe34e9b59e5a4603ccab67
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:72)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:47)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:47)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
-	... 30 more
-Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:1332 after 60000 ms
-	at java.util.concurrent.CompletableFuture.reportGet(Unknown Source)
-	at java.util.concurrent.CompletableFuture.get(Unknown Source)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:201)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:57)
-	... 39 more
-Caused by: java.util.concurrent.TimeoutException: Request timeout to localhost/127.0.0.1:1332 after 60000 ms
-	at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
-	at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
-	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:672)
-	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:747)
-	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:472)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="SKIP" signature="openingBrowser()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI@70fda8]" name="openingBrowser" is-config="true" duration-ms="0" started-at="2020-05-11T20:25:11Z" finished-at="2020-05-11T20:25:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openingBrowser -->
-        <test-method status="SKIP" signature="loginWithDetails(java.lang.String, java.lang.String)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI@70fda8]" name="loginWithDetails" duration-ms="1" started-at="2020-05-11T20:25:11Z" data-provider="dataProvider" finished-at="2020-05-11T20:25:11Z">
+        </test-method> <!-- verifyAutoSuggestValueTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="422" started-at="2020-05-18T15:00:25Z" finished-at="2020-05-18T15:00:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pavantraining@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Test@123q]]>
+                <![CDATA[[TestResult name=verifyAutoSuggestValueTest status=FAILURE method=ActivitiesTest.verifyAutoSuggestValueTest()[pri:1, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithDetails -->
-        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI@70fda8]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2020-05-11T20:25:11Z" finished-at="2020-05-11T20:25:11Z">
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4704" started-at="2020-05-18T15:00:25Z" finished-at="2020-05-18T15:00:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="verifyProductsPriceTest()[pri:2, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyProductsPriceTest" duration-ms="8448" started-at="2020-05-18T15:00:30Z" finished-at="2020-05-18T15:00:38Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Verify Price Range Of Product Value Value on Flipkart home page test failed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Verify Price Range Of Product Value Value on Flipkart home page test failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.qa.Flipkart.ActivitiesTest.ActivitiesTest.verifyProductsPriceTest(ActivitiesTest.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductsPriceTest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="350" started-at="2020-05-18T15:00:38Z" finished-at="2020-05-18T15:00:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyProductsPriceTest status=FAILURE method=ActivitiesTest.verifyProductsPriceTest()[pri:2, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4952" started-at="2020-05-18T15:00:39Z" finished-at="2020-05-18T15:00:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyRegisterationOnHomePage()[pri:3, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyRegisterationOnHomePage" duration-ms="1" started-at="2020-05-18T15:00:44Z" description="Verify Registration functionality" finished-at="2020-05-18T15:00:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterationOnHomePage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:00:44Z" finished-at="2020-05-18T15:00:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRegisterationOnHomePage status=SUCCESS method=ActivitiesTest.verifyRegisterationOnHomePage()[pri:3, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4813" started-at="2020-05-18T15:00:44Z" finished-at="2020-05-18T15:00:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyContactListOnPage()[pri:4, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyContactListOnPage" duration-ms="1" started-at="2020-05-18T15:00:48Z" description="Verify Contact list functionality" finished-at="2020-05-18T15:00:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactListOnPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:00:48Z" finished-at="2020-05-18T15:00:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyContactListOnPage status=SUCCESS method=ActivitiesTest.verifyContactListOnPage()[pri:4, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4746" started-at="2020-05-18T15:00:48Z" finished-at="2020-05-18T15:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyForgetPasswordOnPage()[pri:5, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyForgetPasswordOnPage" duration-ms="1" started-at="2020-05-18T15:00:53Z" description="Verify ForgetPassword functionality" finished-at="2020-05-18T15:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForgetPasswordOnPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:00:53Z" finished-at="2020-05-18T15:00:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyForgetPasswordOnPage status=SUCCESS method=ActivitiesTest.verifyForgetPasswordOnPage()[pri:5, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4671" started-at="2020-05-18T15:00:53Z" finished-at="2020-05-18T15:00:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyRememberPasswordOnPage()[pri:6, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyRememberPasswordOnPage" duration-ms="1" started-at="2020-05-18T15:00:58Z" description="Verify Remember Password functionality" finished-at="2020-05-18T15:00:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRememberPasswordOnPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:00:58Z" finished-at="2020-05-18T15:00:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRememberPasswordOnPage status=SUCCESS method=ActivitiesTest.verifyRememberPasswordOnPage()[pri:6, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4689" started-at="2020-05-18T15:00:58Z" finished-at="2020-05-18T15:01:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyLogOutOnPage()[pri:7, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyLogOutOnPage" duration-ms="1" started-at="2020-05-18T15:01:03Z" description="Verify LogOut functionality" finished-at="2020-05-18T15:01:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogOutOnPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:01:03Z" finished-at="2020-05-18T15:01:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogOutOnPage status=SUCCESS method=ActivitiesTest.verifyLogOutOnPage()[pri:7, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4650" started-at="2020-05-18T15:01:03Z" finished-at="2020-05-18T15:01:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyDownloadsTabOnPage()[pri:8, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyDownloadsTabOnPage" duration-ms="1" started-at="2020-05-18T15:01:07Z" description="Verify Digital Downloads Tab functionality" finished-at="2020-05-18T15:01:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDownloadsTabOnPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:01:07Z" finished-at="2020-05-18T15:01:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyDownloadsTabOnPage status=SUCCESS method=ActivitiesTest.verifyDownloadsTabOnPage()[pri:8, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4680" started-at="2020-05-18T15:01:07Z" finished-at="2020-05-18T15:01:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyComputersTabOnPage()[pri:9, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyComputersTabOnPage" duration-ms="1" started-at="2020-05-18T15:01:12Z" description="Verify Computers Tab functionality" finished-at="2020-05-18T15:01:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyComputersTabOnPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:01:12Z" finished-at="2020-05-18T15:01:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyComputersTabOnPage status=SUCCESS method=ActivitiesTest.verifyComputersTabOnPage()[pri:9, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4639" started-at="2020-05-18T15:01:12Z" finished-at="2020-05-18T15:01:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyElectronicTabOnPage()[pri:10, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyElectronicTabOnPage" duration-ms="1" started-at="2020-05-18T15:01:17Z" description="Verify Electronic Tab functionality" finished-at="2020-05-18T15:01:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyElectronicTabOnPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:01:17Z" finished-at="2020-05-18T15:01:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyElectronicTabOnPage status=SUCCESS method=ActivitiesTest.verifyElectronicTabOnPage()[pri:10, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4655" started-at="2020-05-18T15:01:17Z" finished-at="2020-05-18T15:01:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="verifyGiftOnPage()[pri:11, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyGiftOnPage" duration-ms="1" started-at="2020-05-18T15:01:21Z" description="Verify Gift Tab functionality" finished-at="2020-05-18T15:01:21Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping this one test. Hence not testing]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping this one test. Hence not testing
+	at com.qa.Flipkart.ActivitiesTest.ActivitiesTest.verifyGiftOnPage(ActivitiesTest.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGiftOnPage -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="2" started-at="2020-05-18T15:01:21Z" finished-at="2020-05-18T15:01:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyGiftOnPage status=SKIP method=ActivitiesTest.verifyGiftOnPage()[pri:11, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="generateReport" is-config="true" duration-ms="1316" started-at="2020-05-18T15:01:21Z" finished-at="2020-05-18T15:01:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- com.qa.Flipkart.ActivitiesTest.ActivitiesTest -->
+    </test> <!-- Flipkart Activities Test -->
+  </suite> <!-- Flipkart Activities Suite -->
 </testng-results>

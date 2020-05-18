@@ -6,11 +6,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.qa.Flipkart.TestBase.TestBase;
+import com.qa.Flipkart.Utils.PropertiesManager;
 import com.qa.Flipkart.Utils.SeleniumUtils;
 
 public class AutoSuggestValuesInPage {
 	
 	WebDriver driver;
+	static PropertiesManager properties=PropertiesManager.getInstance();
 	public AutoSuggestValuesInPage(WebDriver driver)
 	{
 		this.driver=driver;
@@ -26,23 +29,33 @@ public class AutoSuggestValuesInPage {
 			loginWindow = driver.findElement(CLOSE_LOGINWINDOW);
 			if (SeleniumUtils.clickOnElement(loginWindow)) {
 				flag = true;
-				System.out.println("Click on Close button of Login Pop-Up window");
+				TestBase.logInfo(String.format(properties.getLogMessage("VerifyClickedOnPopUpLoginWindowPassed")));
+			}
+			else
+			{
+				TestBase.logError(String.format(properties.getLogMessage("VerifyClickedOnPopUpLoginWindowFailed")));
 			}
 		} catch (Exception e) {
 			throw e;
 		}
 		return flag;
 	}
-
+	
 	// This will search specific product items
 	public boolean searchProduct(WebDriver driver) {
 		WebElement enterProductName;
+		String productValue="One Plus";
 		boolean flag = false;
 		try {
 			enterProductName = driver.findElement(SEARCH_PRODUCTS_TEXTBOX);
-			if (SeleniumUtils.sendText(enterProductName, "One Plus")) {
-				flag = true;
+			if (SeleniumUtils.sendText(enterProductName, productValue)) {
+				flag = true;				
+				TestBase.logInfo(String.format(properties.getLogMessage("VerifySearchProductPassed"), productValue));
 				System.out.println("Product value has been entered");
+			}
+			else
+			{
+				TestBase.logError(String.format(properties.getLogMessage("VerifySearchProductFailed"), productValue));
 			}
 		} catch (Exception e) {
 			throw e;
@@ -79,21 +92,25 @@ public class AutoSuggestValuesInPage {
 	
 	// This will check if product value is coming in auto Suggest dropdown value
 	public boolean verifyAutoSuggestValue(String productValue) throws Exception {
-		boolean flag=false;
+		boolean flag=false;	
 		try {
-			if (clickOnLoginWindow(driver)) {
+			//if (clickOnLoginWindow(driver)) {
 				if (searchProduct(driver)) {
 					if(checkProductValue(driver, productValue))
 					{
-						flag=true;						
+						flag=true;
+						TestBase.logInfo(String.format(properties.getLogMessage("VerifyAutoSuggestValuePassed")));
+					}
+					else
+					{
+						TestBase.logError(String.format(properties.getLogMessage("VerifyAutoSuggestValueFailed")));
 					}
 				}
-			}
+			//}
 
 		} catch (Exception e) {
 			throw e;
 		}
 		return flag;
 	}
-
 }

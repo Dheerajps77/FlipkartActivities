@@ -6,12 +6,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.qa.Flipkart.TestBase.TestBase;
+import com.qa.Flipkart.Utils.PropertiesManager;
 import com.qa.Flipkart.Utils.SeleniumUtils;
 
 public class ItemsNameInPage {
 
 	WebDriver driver;
-
+	static PropertiesManager properties=PropertiesManager.getInstance();
 	public ItemsNameInPage(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -26,14 +28,18 @@ public class ItemsNameInPage {
 			element = driver.findElement(SEARCH_BUTTON);
 			if (SeleniumUtils.clickOnElement(element)) {
 				flag = true;
-				System.out.println("Clicked on search button after entered product value");
+				TestBase.logInfo(String.format(properties.getLogMessage("VerifyClickedOnSearchedButtonPassed")));
+			}
+			else
+			{
+				TestBase.logError(String.format(properties.getLogMessage("VerifyClickedOnSearchedButtonFailed")));
 			}
 		} catch (Exception e) {
 			throw e;
 		}
 		return flag;
 	}
-	
+
 	public boolean checkProductsName(String productValue) throws Exception
 	{
 		ArrayList<String> arrayList;

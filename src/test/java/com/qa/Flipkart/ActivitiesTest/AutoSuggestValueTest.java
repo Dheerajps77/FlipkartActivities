@@ -14,11 +14,11 @@ public class AutoSuggestValueTest extends TestBase {
 	public void verifyAutoSuggestValueTest() {
 		boolean flagverifyAutoSuggestValueTest;
 		try {
-			System.out.println("verifyAutoSuggestValueTest has been started");
+			startTest(properties.getLogMessage("VerifyAutoSuggestValueInPage"),properties.getLogMessage("VerifyDetailsPresentOnAutoSuggestValueInPage"));
+			setTestCategory(properties.getLogMessage("CategoryVerifyAutoSuggestValueInPage"));			
 			objAutoSuggestValuesInPage = new AutoSuggestValuesInPage(driver);
 			flagverifyAutoSuggestValueTest = objAutoSuggestValuesInPage.verifyAutoSuggestValue("One Plus");
-			Assert.assertTrue(flagverifyAutoSuggestValueTest,
-					"One Plus value is not found in the Auto Suggest Drop Down Value");
+			Assert.assertTrue(flagverifyAutoSuggestValueTest,String.format(properties.getLogMessage("VerifyAutoSuggestValueInPageTestFailed")));
 			System.out.println("Auto suggest corresponding to 'One Plus' test has been passed");
 			System.out.println("verifyAutoSuggestValueTest has been ended");
 		} catch (Exception e) {
