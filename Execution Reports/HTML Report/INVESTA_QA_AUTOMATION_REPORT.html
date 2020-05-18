@@ -48,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>May 18, 2020 09:24:46 PM</span>
+                    <span class='label suite-start-time blue darken-3'>May 18, 2020 09:31:25 PM</span>
 				</a>
 			</li>
 			<li>
@@ -75,7 +75,6 @@
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
-						<li status='error'><a href='#!'>Error <i class='material-icons red-text lighten-2'>error</i></a></li>
 						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
@@ -148,10 +147,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='66.667%'><span class='strong'>8</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='75%'><span class='strong'>9</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='25%'>3</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='8.333%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='16.667%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='8.333%'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -163,10 +162,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='53.333%'><span class='strong'>16</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='60%'><span class='strong'>18</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>6</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='26.667%'>8</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='13.333%'>4</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='26.667%'>8</span> others
 				</div>
 			</div>
 		</div>
@@ -184,14 +183,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Product Name on Flipkart home page</span>
-						<span class='test-time'>May 18, 2020 09:25:15 PM</span>
+						<span class='test-time'>May 18, 2020 09:31:56 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2020 09:25:15 PM</span>
-	<span class='label end-time'>May 18, 2020 09:26:04 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 48s+840ms</span>
+	<span class='label start-time'>May 18, 2020 09:31:56 PM</span>
+	<span class='label end-time'>May 18, 2020 09:32:12 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+827ms</span>
 </div>
 	<div class='test-desc'>This test verify the details of Product Name on Flipkart home page </div>
 	<div class='test-attributes'>
@@ -211,27 +210,22 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:25:28 PM</td>
+					<td class='timestamp'>9:32:04 PM</td>
 					<td class='step-details'>Clicked on Close button of Login Pop-Up window is passed</td>
 				</tr>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:25:38 PM</td>
+					<td class='timestamp'>9:32:04 PM</td>
 					<td class='step-details'>Product value [One Plus] has been entered is passed</td>
-				</tr>
-				<tr class='log' status='info'>
-					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:25:56 PM</td>
-					<td class='step-details'>Clicked on search button after entered product value is passed</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:26:04 PM</td>
+					<td class='timestamp'>9:32:12 PM</td>
 					<td class='step-details'><span class='label white-text red'>verifyProductsNameTest: Test Case Failed due to below issues: </span></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:26:04 PM</td>
+					<td class='timestamp'>9:32:12 PM</td>
 					<td class='step-details'><pre>java.lang.AssertionError: Verify details of product name on Flipkart home page test failed expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
@@ -277,17 +271,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Auto Suggest Value on Flipkart home page</span>
-						<span class='test-time'>May 18, 2020 09:26:10 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-time'>May 18, 2020 09:32:19 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2020 09:26:10 PM</span>
-	<span class='label end-time'>May 18, 2020 09:26:19 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+872ms</span>
+	<span class='label start-time'>May 18, 2020 09:32:19 PM</span>
+	<span class='label end-time'>May 18, 2020 09:32:27 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+703ms</span>
 </div>
 	<div class='test-desc'>This test verify the details present of Auto Suggest Value on Flipkart home page </div>
 	<div class='test-attributes'>
@@ -307,63 +301,27 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:26:10 PM</td>
+					<td class='timestamp'>9:32:19 PM</td>
 					<td class='step-details'>Product value [One Plus] has been entered is passed</td>
 				</tr>
-				<tr class='log' status='error'>
-					<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
-					<td class='timestamp'>9:26:19 PM</td>
-					<td class='step-details'>Auto Suggest Value has been failed</td>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:32:27 PM</td>
+					<td class='step-details'>Auto Suggest Value has been passed</td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:26:19 PM</td>
-					<td class='step-details'><span class='label white-text red'>verifyAutoSuggestValueTest: Test Case Failed due to below issues: </span></td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:32:27 PM</td>
+					<td class='step-details'><span class='label white-text green'>verifyAutoSuggestValueTest: Test Case Passed: </span></td>
 				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:26:19 PM</td>
-					<td class='step-details'><pre>java.lang.AssertionError: Verify details present of Auto Suggest Value on Flipkart home page test failed expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.qa.Flipkart.ActivitiesTest.ActivitiesTest.verifyAutoSuggestValueTest(ActivitiesTest.java:40)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></td>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>9:32:27 PM</td>
+					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
-							<ul class='screenshots'>
-								<li><img data-featherlight='C:\Users\Rahul Singh\git\FlipkartActivities/Execution Reports/FailedTestsScreenshots/verifyAutoSuggestValueTest.png' width='10%' src='C:\Users\Rahul Singh\git\FlipkartActivities/Execution Reports/FailedTestsScreenshots/verifyAutoSuggestValueTest.png' data-src='C:\Users\Rahul Singh\git\FlipkartActivities/Execution Reports/FailedTestsScreenshots/verifyAutoSuggestValueTest.png'></li>
-							</ul>
 					</div>
 				</li>
 				
@@ -371,14 +329,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Price Range of Product Value on Flipkart home page</span>
-						<span class='test-time'>May 18, 2020 09:26:25 PM</span>
+						<span class='test-time'>May 18, 2020 09:32:33 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2020 09:26:25 PM</span>
-	<span class='label end-time'>May 18, 2020 09:26:26 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 1s+197ms</span>
+	<span class='label start-time'>May 18, 2020 09:32:33 PM</span>
+	<span class='label end-time'>May 18, 2020 09:32:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 14s+516ms</span>
 </div>
 	<div class='test-desc'>This test verify the details of Price Range of Product Value on Flipkart home page </div>
 	<div class='test-attributes'>
@@ -398,17 +356,22 @@
 			<tbody>
 				<tr class='log' status='info'>
 					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-					<td class='timestamp'>9:26:25 PM</td>
+					<td class='timestamp'>9:32:33 PM</td>
 					<td class='step-details'>Product value [One Plus] has been entered is passed</td>
+				</tr>
+				<tr class='log' status='info'>
+					<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+					<td class='timestamp'>9:32:41 PM</td>
+					<td class='step-details'>Clicked on search button after entered product value is passed</td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:26:26 PM</td>
+					<td class='timestamp'>9:32:47 PM</td>
 					<td class='step-details'><span class='label white-text red'>verifyProductsPriceTest: Test Case Failed due to below issues: </span></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>9:26:26 PM</td>
+					<td class='timestamp'>9:32:47 PM</td>
 					<td class='step-details'><pre>java.lang.AssertionError: Verify Price Range Of Product Value Value on Flipkart home page test failed expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
 	at org.testng.Assert.failNotEquals(Assert.java:496)
@@ -457,14 +420,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Registration on Flipkart home page</span>
-						<span class='test-time'>May 18, 2020 09:26:31 PM</span>
+						<span class='test-time'>May 18, 2020 09:32:53 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2020 09:26:31 PM</span>
-	<span class='label end-time'>May 18, 2020 09:26:31 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+4ms</span>
+	<span class='label start-time'>May 18, 2020 09:32:53 PM</span>
+	<span class='label end-time'>May 18, 2020 09:32:53 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
 </div>
 	<div class='test-desc'>This test verify the Registration on Flipkart home page </div>
 	<div class='test-attributes'>
@@ -484,12 +447,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:26:31 PM</td>
+					<td class='timestamp'>9:32:53 PM</td>
 					<td class='step-details'><span class='label white-text green'>verifyRegisterationOnHomePage: Test Case Passed: </span></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:26:31 PM</td>
+					<td class='timestamp'>9:32:53 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -502,14 +465,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Contact List on Flipkart home page</span>
-						<span class='test-time'>May 18, 2020 09:26:36 PM</span>
+						<span class='test-time'>May 18, 2020 09:32:58 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2020 09:26:36 PM</span>
-	<span class='label end-time'>May 18, 2020 09:26:36 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
+	<span class='label start-time'>May 18, 2020 09:32:58 PM</span>
+	<span class='label end-time'>May 18, 2020 09:32:58 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 </div>
 	<div class='test-desc'>This test verify the Contact List on Flipkart home page </div>
 	<div class='test-attributes'>
@@ -529,12 +492,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:26:36 PM</td>
+					<td class='timestamp'>9:32:58 PM</td>
 					<td class='step-details'><span class='label white-text green'>verifyContactListOnPage: Test Case Passed: </span></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:26:36 PM</td>
+					<td class='timestamp'>9:32:58 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -547,14 +510,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Forget Password on Flipkart home page</span>
-						<span class='test-time'>May 18, 2020 09:26:41 PM</span>
+						<span class='test-time'>May 18, 2020 09:33:03 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2020 09:26:41 PM</span>
-	<span class='label end-time'>May 18, 2020 09:26:41 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
+	<span class='label start-time'>May 18, 2020 09:33:03 PM</span>
+	<span class='label end-time'>May 18, 2020 09:33:03 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 </div>
 	<div class='test-desc'>This test verify the Forget Password on Flipkart home page </div>
 	<div class='test-attributes'>
@@ -574,12 +537,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:26:41 PM</td>
+					<td class='timestamp'>9:33:03 PM</td>
 					<td class='step-details'><span class='label white-text green'>verifyForgetPasswordOnPage: Test Case Passed: </span></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:26:41 PM</td>
+					<td class='timestamp'>9:33:03 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -592,13 +555,13 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Remember Password on Flipkart home page</span>
-						<span class='test-time'>May 18, 2020 09:26:46 PM</span>
+						<span class='test-time'>May 18, 2020 09:33:09 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2020 09:26:46 PM</span>
-	<span class='label end-time'>May 18, 2020 09:26:46 PM</span>
+	<span class='label start-time'>May 18, 2020 09:33:09 PM</span>
+	<span class='label end-time'>May 18, 2020 09:33:09 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 </div>
 	<div class='test-desc'>This test verify the Remember Password on Flipkart home page </div>
@@ -619,12 +582,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:26:46 PM</td>
+					<td class='timestamp'>9:33:09 PM</td>
 					<td class='step-details'><span class='label white-text green'>verifyRememberPasswordOnPage: Test Case Passed: </span></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:26:46 PM</td>
+					<td class='timestamp'>9:33:09 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -637,14 +600,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify LogOut on Flipkart home page</span>
-						<span class='test-time'>May 18, 2020 09:26:51 PM</span>
+						<span class='test-time'>May 18, 2020 09:33:14 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2020 09:26:51 PM</span>
-	<span class='label end-time'>May 18, 2020 09:26:51 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
+	<span class='label start-time'>May 18, 2020 09:33:14 PM</span>
+	<span class='label end-time'>May 18, 2020 09:33:14 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 </div>
 	<div class='test-desc'>This test verify the LogOut on Flipkart home page </div>
 	<div class='test-attributes'>
@@ -664,12 +627,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:26:51 PM</td>
+					<td class='timestamp'>9:33:14 PM</td>
 					<td class='step-details'><span class='label white-text green'>verifyLogOutOnPage: Test Case Passed: </span></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:26:51 PM</td>
+					<td class='timestamp'>9:33:14 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -682,14 +645,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify DownloadTab on Flipkart home page</span>
-						<span class='test-time'>May 18, 2020 09:26:57 PM</span>
+						<span class='test-time'>May 18, 2020 09:33:19 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2020 09:26:57 PM</span>
-	<span class='label end-time'>May 18, 2020 09:26:57 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+4ms</span>
+	<span class='label start-time'>May 18, 2020 09:33:19 PM</span>
+	<span class='label end-time'>May 18, 2020 09:33:19 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
 </div>
 	<div class='test-desc'>This test verify the DownloadTab on Flipkart home page </div>
 	<div class='test-attributes'>
@@ -709,12 +672,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:26:57 PM</td>
+					<td class='timestamp'>9:33:19 PM</td>
 					<td class='step-details'><span class='label white-text green'>verifyDownloadsTabOnPage: Test Case Passed: </span></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:26:57 PM</td>
+					<td class='timestamp'>9:33:19 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -727,14 +690,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify ComputersTab on Flipkart home page</span>
-						<span class='test-time'>May 18, 2020 09:27:03 PM</span>
+						<span class='test-time'>May 18, 2020 09:33:24 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2020 09:27:03 PM</span>
-	<span class='label end-time'>May 18, 2020 09:27:03 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
+	<span class='label start-time'>May 18, 2020 09:33:24 PM</span>
+	<span class='label end-time'>May 18, 2020 09:33:24 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
 </div>
 	<div class='test-desc'>This test verify the ComputersTab on Flipkart home page </div>
 	<div class='test-attributes'>
@@ -754,12 +717,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:27:03 PM</td>
+					<td class='timestamp'>9:33:24 PM</td>
 					<td class='step-details'><span class='label white-text green'>verifyComputersTabOnPage: Test Case Passed: </span></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:27:03 PM</td>
+					<td class='timestamp'>9:33:24 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -772,13 +735,13 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify ElectronicTab on Flipkart home page</span>
-						<span class='test-time'>May 18, 2020 09:27:10 PM</span>
+						<span class='test-time'>May 18, 2020 09:33:30 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2020 09:27:10 PM</span>
-	<span class='label end-time'>May 18, 2020 09:27:10 PM</span>
+	<span class='label start-time'>May 18, 2020 09:33:30 PM</span>
+	<span class='label end-time'>May 18, 2020 09:33:30 PM</span>
 	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+2ms</span>
 </div>
 	<div class='test-desc'>This test verify the ElectronicTab on Flipkart home page </div>
@@ -799,12 +762,12 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:27:10 PM</td>
+					<td class='timestamp'>9:33:30 PM</td>
 					<td class='step-details'><span class='label white-text green'>verifyElectronicTabOnPage: Test Case Passed: </span></td>
 				</tr>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>9:27:10 PM</td>
+					<td class='timestamp'>9:33:30 PM</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -817,14 +780,14 @@
 				<li class='test displayed active  skip' status='skip' bdd='false' test-id='12'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Gift on Flipkart home page</span>
-						<span class='test-time'>May 18, 2020 09:27:15 PM</span>
+						<span class='test-time'>May 18, 2020 09:33:35 PM</span>
 						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>May 18, 2020 09:27:15 PM</span>
-	<span class='label end-time'>May 18, 2020 09:27:15 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+3ms</span>
+	<span class='label start-time'>May 18, 2020 09:33:35 PM</span>
+	<span class='label end-time'>May 18, 2020 09:33:35 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+6ms</span>
 </div>
 	<div class='test-desc'>This test verify the Gift on Flipkart home page </div>
 	<div class='test-attributes'>
@@ -844,12 +807,12 @@
 			<tbody>
 				<tr class='log' status='skip'>
 					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>9:27:15 PM</td>
+					<td class='timestamp'>9:33:35 PM</td>
 					<td class='step-details'><span class='label white-text orange'>verifyGiftOnPage: Test Case Skipped: </span></td>
 				</tr>
 				<tr class='log' status='skip'>
 					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
-					<td class='timestamp'>9:27:15 PM</td>
+					<td class='timestamp'>9:33:35 PM</td>
 					<td class='step-details'><pre>org.testng.SkipException: Skipping this one test. Hence not testing
 	at com.qa.Flipkart.ActivitiesTest.ActivitiesTest.verifyGiftOnPage(ActivitiesTest.java:172)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -962,7 +925,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2020 09:25:15 PM</td>
+										<td>May 18, 2020 09:31:56 PM</td>
 										<td class='linked' test-id='1'>Verify Product Name on Flipkart home page</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -975,13 +938,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>detailspresentofAutoSuggestValueonFlipkarthomepage</span>
 						<span class='category-status right'>
-							<span class='label fail'>1</span>
+							<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -996,9 +959,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2020 09:26:10 PM</td>
+										<td>May 18, 2020 09:32:19 PM</td>
 										<td class='linked' test-id='2'>Verify Auto Suggest Value on Flipkart home page</td>
-										<td><span class='test-status fail'>fail</span></td>
+										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -1030,7 +993,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2020 09:26:25 PM</td>
+										<td>May 18, 2020 09:32:33 PM</td>
 										<td class='linked' test-id='3'>Verify Price Range of Product Value on Flipkart home page</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -1064,7 +1027,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2020 09:26:31 PM</td>
+										<td>May 18, 2020 09:32:53 PM</td>
 										<td class='linked' test-id='4'>Verify Registration on Flipkart home page</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1098,7 +1061,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2020 09:26:36 PM</td>
+										<td>May 18, 2020 09:32:58 PM</td>
 										<td class='linked' test-id='5'>Verify Contact List on Flipkart home page</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1132,7 +1095,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2020 09:26:41 PM</td>
+										<td>May 18, 2020 09:33:03 PM</td>
 										<td class='linked' test-id='6'>Verify Forget Password on Flipkart home page</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1166,7 +1129,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2020 09:26:46 PM</td>
+										<td>May 18, 2020 09:33:09 PM</td>
 										<td class='linked' test-id='7'>Verify Remember Password on Flipkart home page</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1200,7 +1163,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2020 09:26:51 PM</td>
+										<td>May 18, 2020 09:33:14 PM</td>
 										<td class='linked' test-id='8'>Verify LogOut on Flipkart home page</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1234,7 +1197,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2020 09:26:57 PM</td>
+										<td>May 18, 2020 09:33:19 PM</td>
 										<td class='linked' test-id='9'>Verify DownloadTab on Flipkart home page</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1268,7 +1231,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2020 09:27:03 PM</td>
+										<td>May 18, 2020 09:33:24 PM</td>
 										<td class='linked' test-id='10'>Verify ComputersTab on Flipkart home page</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1302,7 +1265,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2020 09:27:10 PM</td>
+										<td>May 18, 2020 09:33:30 PM</td>
 										<td class='linked' test-id='11'>Verify ElectronicTab on Flipkart home page</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
@@ -1336,7 +1299,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 18, 2020 09:27:15 PM</td>
+										<td>May 18, 2020 09:33:35 PM</td>
 										<td class='linked' test-id='12'>Verify Gift on Flipkart home page</td>
 										<td><span class='test-status skip'>skip</span></td>
 									</tr>
@@ -1385,7 +1348,7 @@
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
                                 <span class='exception-name'>java.lang.AssertionError</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
                             </div>
                             <div class='exception-content hide'>
                                 <div class='exception-tests'>
@@ -1399,7 +1362,7 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>May 18, 2020 09:25:15 PM</td>
+                                                        <td>May 18, 2020 09:31:56 PM</td>
                                                         <td class='linked' test-id='1'>Verify Product Name on Flipkart home page</td>
                                                         <td><pre><pre>java.lang.AssertionError: Verify details of product name on Flipkart home page test failed expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
@@ -1437,45 +1400,7 @@
 </pre></pre></td>
                                                     </tr>
                                                     <tr>
-                                                        <td>May 18, 2020 09:26:10 PM</td>
-                                                        <td class='linked' test-id='2'>Verify Auto Suggest Value on Flipkart home page</td>
-                                                        <td><pre><pre>java.lang.AssertionError: Verify details present of Auto Suggest Value on Flipkart home page test failed expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.qa.Flipkart.ActivitiesTest.ActivitiesTest.verifyAutoSuggestValueTest(ActivitiesTest.java:40)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>May 18, 2020 09:26:25 PM</td>
+                                                        <td>May 18, 2020 09:32:33 PM</td>
                                                         <td class='linked' test-id='3'>Verify Price Range of Product Value on Flipkart home page</td>
                                                         <td><pre><pre>java.lang.AssertionError: Verify Price Range Of Product Value Value on Flipkart home page test failed expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:94)
@@ -1534,7 +1459,7 @@
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>May 18, 2020 09:27:15 PM</td>
+                                                        <td>May 18, 2020 09:33:35 PM</td>
                                                         <td class='linked' test-id='12'>Verify Gift on Flipkart home page</td>
                                                         <td><pre><pre>org.testng.SkipException: Skipping this one test. Hence not testing
 	at com.qa.Flipkart.ActivitiesTest.ActivitiesTest.verifyGiftOnPage(ActivitiesTest.java:172)
@@ -1604,19 +1529,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 18, 2020 09:24:46 PM</div>
+					<div class='panel-lead'>May 18, 2020 09:31:25 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 18, 2020 09:27:15 PM</div>
+			 		<div class='panel-lead'>May 18, 2020 09:33:35 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 2m 29s+106ms</div>
+					<div class='panel-lead'>0h 2m 9s+327ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1674,11 +1599,11 @@
 						</tr>
 						<tr>
 							<td>detailspresentofAutoSuggestValueonFlipkarthomepage</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
@@ -1784,22 +1709,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 8,
-				failParent: 3,
+				passParent: 9,
+				failParent: 2,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 1,
-				exceptionsParent: 4,
+				exceptionsParent: 3,
 				
-				passChild: 16,
-				failChild: 6,
+				passChild: 18,
+				failChild: 4,
 				fatalChild: 0,
-				errorChild: 1,
+				errorChild: 0,
 				warningChild: 0,
 				skipChild: 2,
-				infoChild: 5,
-				exceptionsChild: 9,
+				infoChild: 6,
+				exceptionsChild: 6,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

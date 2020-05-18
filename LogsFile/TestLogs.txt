@@ -3337,3 +3337,32 @@ Session ID: 3cc4aaa54d4dcc23b825219e91d72e02
 2020-05-18 21:27:15 INFO  Logger:185 - Test verifyGiftOnPage module has been started
 2020-05-18 21:27:15 INFO  Logger:188 - Test verifyGiftOnPage module has been skipped
 2020-05-18 21:27:15 INFO  Logger:189 - org.testng.SkipException: Skipping this one test. Hence not testing
+2020-05-18 21:31:26 INFO  Logger:77 - Getting OS name
+2020-05-18 21:31:33 INFO  Logger:84 - Windows OS
+2020-05-18 21:31:56 INFO  Logger:235 - Test [Verify Product Name on Flipkart home page] has been started
+2020-05-18 21:32:04 INFO  Logger:244 - Clicked on Close button of Login Pop-Up window is passed
+2020-05-18 21:32:04 INFO  Logger:244 - Product value [One Plus] has been entered is passed
+2020-05-18 21:32:12 INFO  Logger:176 - Test verifyProductsNameTest module has been started
+2020-05-18 21:32:12 INFO  Logger:180 - Test verifyProductsNameTest module has been failed
+2020-05-18 21:32:12 INFO  Logger:181 - java.lang.AssertionError: Verify details of product name on Flipkart home page test failed expected [true] but found [false]
+2020-05-18 21:32:19 INFO  Logger:235 - Test [Verify Auto Suggest Value on Flipkart home page] has been started
+2020-05-18 21:32:19 INFO  Logger:244 - Product value [One Plus] has been entered is passed
+2020-05-18 21:32:27 INFO  Logger:244 - Auto Suggest Value has been passed
+2020-05-18 21:32:33 INFO  Logger:235 - Test [Verify Price Range of Product Value on Flipkart home page] has been started
+2020-05-18 21:32:33 INFO  Logger:244 - Product value [One Plus] has been entered is passed
+2020-05-18 21:32:41 INFO  Logger:244 - Clicked on search button after entered product value is passed
+2020-05-18 21:32:47 INFO  Logger:176 - Test verifyProductsPriceTest module has been started
+2020-05-18 21:32:47 INFO  Logger:180 - Test verifyProductsPriceTest module has been failed
+2020-05-18 21:32:47 INFO  Logger:181 - java.lang.AssertionError: Verify Price Range Of Product Value Value on Flipkart home page test failed expected [true] but found [false]
+2020-05-18 21:32:53 INFO  Logger:235 - Test [Verify Registration on Flipkart home page] has been started
+2020-05-18 21:32:58 INFO  Logger:235 - Test [Verify Contact List on Flipkart home page] has been started
+2020-05-18 21:33:03 INFO  Logger:235 - Test [Verify Forget Password on Flipkart home page] has been started
+2020-05-18 21:33:09 INFO  Logger:235 - Test [Verify Remember Password on Flipkart home page] has been started
+2020-05-18 21:33:14 INFO  Logger:235 - Test [Verify LogOut on Flipkart home page] has been started
+2020-05-18 21:33:19 INFO  Logger:235 - Test [Verify DownloadTab on Flipkart home page] has been started
+2020-05-18 21:33:24 INFO  Logger:235 - Test [Verify ComputersTab on Flipkart home page] has been started
+2020-05-18 21:33:30 INFO  Logger:235 - Test [Verify ElectronicTab on Flipkart home page] has been started
+2020-05-18 21:33:35 INFO  Logger:235 - Test [Verify Gift on Flipkart home page] has been started
+2020-05-18 21:33:35 INFO  Logger:185 - Test verifyGiftOnPage module has been started
+2020-05-18 21:33:35 INFO  Logger:188 - Test verifyGiftOnPage module has been skipped
+2020-05-18 21:33:35 INFO  Logger:189 - org.testng.SkipException: Skipping this one test. Hence not testing
