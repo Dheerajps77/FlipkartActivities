@@ -12,13 +12,13 @@ public class PropertiesManager {
 	private Properties configProperties;
 	private Properties constants;
 	private Properties logMessages;
-	private Properties pagesURL;
+	//private Properties pagesURL;
 	
 	public PropertiesManager() {
 		configProperties = ConfigFile();	
 		constants = ConstantsFile();
 		logMessages = LogMessagesFile();
-		pagesURL=PagesURL();
+		//pagesURL=PagesURL();
 	}
 	public Properties ConfigFile() {
 		File file = new File(System.getProperty("user.dir") + "/Config Files/Config.properties");
@@ -71,6 +71,7 @@ public class PropertiesManager {
 		return props;
 	}
 	
+	/*
 	public Properties PagesURL() {
 		File file = new File(System.getProperty("user.dir") + "/Config Files/URLs.properties"); 
 		FileInputStream fileInput = null;
@@ -87,6 +88,7 @@ public class PropertiesManager {
 		}
 		return props;
 	}
+	*/
 		
 	public static PropertiesManager getInstance() {
 		if (envProperties == null) {
@@ -107,8 +109,10 @@ public class PropertiesManager {
 		return logMessages.getProperty(key);
 	}
 	
+	/*
 	public String getPagesURL(String key) {
 		return pagesURL.getProperty(key);
 	}
 
+	*/
 }
