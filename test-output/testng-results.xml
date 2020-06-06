@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="3" total="12" passed="8">
+<testng-results skipped="0" failed="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Flipkart Activities Suite" duration-ms="81631" started-at="2020-05-18T09:30:00Z" finished-at="2020-05-18T09:31:21Z">
+  <suite name="weather Check for City" duration-ms="144149" started-at="2020-06-06T09:31:23Z" finished-at="2020-06-06T09:33:47Z">
     <groups>
     </groups>
-    <test name="Flipkart Activities Test" duration-ms="81631" started-at="2020-05-18T09:30:00Z" finished-at="2020-05-18T09:31:21Z">
-      <class name="com.qa.Flipkart.ActivitiesTest.ActivitiesTest">
-        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeSuite" is-config="true" duration-ms="15946" started-at="2020-05-18T14:59:44Z" finished-at="2020-05-18T15:00:00Z">
+    <test name="weather Check for City in chrome" duration-ms="113051" started-at="2020-06-06T09:31:23Z" finished-at="2020-06-06T09:33:16Z">
+      <class name="com.qa.parallelTest.CityDegreeCheck.ParallelTest">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="initiateBrowser" is-config="true" duration-ms="14145" started-at="2020-06-06T15:01:23Z" finished-at="2020-06-06T15:01:37Z">
           <params>
             <param index="0">
               <value>
@@ -17,385 +17,373 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="5352" started-at="2020-05-18T15:00:00Z" finished-at="2020-05-18T15:00:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="verifyProductsNameTest()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyProductsNameTest" duration-ms="13398" started-at="2020-05-18T15:00:05Z" finished-at="2020-05-18T15:00:18Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Verify details of product name on Flipkart home page test failed expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Verify details of product name on Flipkart home page test failed expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.qa.Flipkart.ActivitiesTest.ActivitiesTest.verifyProductsNameTest(ActivitiesTest.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductsNameTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="487" started-at="2020-05-18T15:00:18Z" finished-at="2020-05-18T15:00:19Z">
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="verifyCityName" duration-ms="5162" started-at="2020-06-06T15:01:37Z" data-provider="dataOfCityName" finished-at="2020-06-06T15:01:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProductsNameTest status=FAILURE method=ActivitiesTest.verifyProductsNameTest()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Delhi]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4724" started-at="2020-05-18T15:00:19Z" finished-at="2020-05-18T15:00:24Z">
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="closeBrowser" is-config="true" duration-ms="874" started-at="2020-06-06T15:01:42Z" finished-at="2020-06-06T15:01:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="verifyAutoSuggestValueTest()[pri:1, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyAutoSuggestValueTest" duration-ms="1197" started-at="2020-05-18T15:00:24Z" finished-at="2020-05-18T15:00:25Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Verify details present of Auto Suggest Value on Flipkart home page test failed expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Verify details present of Auto Suggest Value on Flipkart home page test failed expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.qa.Flipkart.ActivitiesTest.ActivitiesTest.verifyAutoSuggestValueTest(ActivitiesTest.java:40)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAutoSuggestValueTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="422" started-at="2020-05-18T15:00:25Z" finished-at="2020-05-18T15:00:25Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="initiateBrowser" is-config="true" duration-ms="12423" started-at="2020-06-06T15:01:43Z" finished-at="2020-06-06T15:01:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyAutoSuggestValueTest status=FAILURE method=ActivitiesTest.verifyAutoSuggestValueTest()[pri:1, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4704" started-at="2020-05-18T15:00:25Z" finished-at="2020-05-18T15:00:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="verifyProductsPriceTest()[pri:2, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyProductsPriceTest" duration-ms="8448" started-at="2020-05-18T15:00:30Z" finished-at="2020-05-18T15:00:38Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Verify Price Range Of Product Value Value on Flipkart home page test failed expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Verify Price Range Of Product Value Value on Flipkart home page test failed expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.failNotEquals(Assert.java:496)
-	at org.testng.Assert.assertTrue(Assert.java:42)
-	at com.qa.Flipkart.ActivitiesTest.ActivitiesTest.verifyProductsPriceTest(ActivitiesTest.java:54)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductsPriceTest -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="350" started-at="2020-05-18T15:00:38Z" finished-at="2020-05-18T15:00:39Z">
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="verifyCityName" duration-ms="4565" started-at="2020-06-06T15:01:56Z" data-provider="dataOfCityName" finished-at="2020-06-06T15:02:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProductsPriceTest status=FAILURE method=ActivitiesTest.verifyProductsPriceTest()[pri:2, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Banda Aceh]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4952" started-at="2020-05-18T15:00:39Z" finished-at="2020-05-18T15:00:44Z">
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="closeBrowser" is-config="true" duration-ms="4981" started-at="2020-06-06T15:02:00Z" finished-at="2020-06-06T15:02:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyRegisterationOnHomePage()[pri:3, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyRegisterationOnHomePage" duration-ms="1" started-at="2020-05-18T15:00:44Z" description="Verify Registration functionality" finished-at="2020-05-18T15:00:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRegisterationOnHomePage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:00:44Z" finished-at="2020-05-18T15:00:44Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="initiateBrowser" is-config="true" duration-ms="11083" started-at="2020-06-06T15:02:05Z" finished-at="2020-06-06T15:02:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyRegisterationOnHomePage status=SUCCESS method=ActivitiesTest.verifyRegisterationOnHomePage()[pri:3, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4813" started-at="2020-05-18T15:00:44Z" finished-at="2020-05-18T15:00:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyContactListOnPage()[pri:4, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyContactListOnPage" duration-ms="1" started-at="2020-05-18T15:00:48Z" description="Verify Contact list functionality" finished-at="2020-05-18T15:00:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyContactListOnPage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:00:48Z" finished-at="2020-05-18T15:00:48Z">
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="verifyCityName" duration-ms="5765" started-at="2020-06-06T15:02:16Z" data-provider="dataOfCityName" finished-at="2020-06-06T15:02:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyContactListOnPage status=SUCCESS method=ActivitiesTest.verifyContactListOnPage()[pri:4, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Badalona]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4746" started-at="2020-05-18T15:00:48Z" finished-at="2020-05-18T15:00:53Z">
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="closeBrowser" is-config="true" duration-ms="893" started-at="2020-06-06T15:02:22Z" finished-at="2020-06-06T15:02:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyForgetPasswordOnPage()[pri:5, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyForgetPasswordOnPage" duration-ms="1" started-at="2020-05-18T15:00:53Z" description="Verify ForgetPassword functionality" finished-at="2020-05-18T15:00:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyForgetPasswordOnPage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:00:53Z" finished-at="2020-05-18T15:00:53Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="initiateBrowser" is-config="true" duration-ms="12432" started-at="2020-06-06T15:02:23Z" finished-at="2020-06-06T15:02:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyForgetPasswordOnPage status=SUCCESS method=ActivitiesTest.verifyForgetPasswordOnPage()[pri:5, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4671" started-at="2020-05-18T15:00:53Z" finished-at="2020-05-18T15:00:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyRememberPasswordOnPage()[pri:6, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyRememberPasswordOnPage" duration-ms="1" started-at="2020-05-18T15:00:58Z" description="Verify Remember Password functionality" finished-at="2020-05-18T15:00:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRememberPasswordOnPage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:00:58Z" finished-at="2020-05-18T15:00:58Z">
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="verifyCityName" duration-ms="4463" started-at="2020-06-06T15:02:35Z" data-provider="dataOfCityName" finished-at="2020-06-06T15:02:40Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyRememberPasswordOnPage status=SUCCESS method=ActivitiesTest.verifyRememberPasswordOnPage()[pri:6, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bakersfield]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4689" started-at="2020-05-18T15:00:58Z" finished-at="2020-05-18T15:01:03Z">
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="closeBrowser" is-config="true" duration-ms="1179" started-at="2020-06-06T15:02:40Z" finished-at="2020-06-06T15:02:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyLogOutOnPage()[pri:7, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyLogOutOnPage" duration-ms="1" started-at="2020-05-18T15:01:03Z" description="Verify LogOut functionality" finished-at="2020-05-18T15:01:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogOutOnPage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:01:03Z" finished-at="2020-05-18T15:01:03Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="initiateBrowser" is-config="true" duration-ms="11679" started-at="2020-06-06T15:02:41Z" finished-at="2020-06-06T15:02:53Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLogOutOnPage status=SUCCESS method=ActivitiesTest.verifyLogOutOnPage()[pri:7, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4650" started-at="2020-05-18T15:01:03Z" finished-at="2020-05-18T15:01:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyDownloadsTabOnPage()[pri:8, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyDownloadsTabOnPage" duration-ms="1" started-at="2020-05-18T15:01:07Z" description="Verify Digital Downloads Tab functionality" finished-at="2020-05-18T15:01:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyDownloadsTabOnPage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:01:07Z" finished-at="2020-05-18T15:01:07Z">
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="verifyCityName" duration-ms="4951" started-at="2020-06-06T15:02:53Z" data-provider="dataOfCityName" finished-at="2020-06-06T15:02:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyDownloadsTabOnPage status=SUCCESS method=ActivitiesTest.verifyDownloadsTabOnPage()[pri:8, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baguio]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4680" started-at="2020-05-18T15:01:07Z" finished-at="2020-05-18T15:01:12Z">
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="closeBrowser" is-config="true" duration-ms="1114" started-at="2020-06-06T15:02:58Z" finished-at="2020-06-06T15:02:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyComputersTabOnPage()[pri:9, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyComputersTabOnPage" duration-ms="1" started-at="2020-05-18T15:01:12Z" description="Verify Computers Tab functionality" finished-at="2020-05-18T15:01:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyComputersTabOnPage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:01:12Z" finished-at="2020-05-18T15:01:12Z">
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="initiateBrowser" is-config="true" duration-ms="11753" started-at="2020-06-06T15:02:59Z" finished-at="2020-06-06T15:03:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyComputersTabOnPage status=SUCCESS method=ActivitiesTest.verifyComputersTabOnPage()[pri:9, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4639" started-at="2020-05-18T15:01:12Z" finished-at="2020-05-18T15:01:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyElectronicTabOnPage()[pri:10, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyElectronicTabOnPage" duration-ms="1" started-at="2020-05-18T15:01:17Z" description="Verify Electronic Tab functionality" finished-at="2020-05-18T15:01:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyElectronicTabOnPage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-05-18T15:01:17Z" finished-at="2020-05-18T15:01:17Z">
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="verifyCityName" duration-ms="4733" started-at="2020-06-06T15:03:11Z" data-provider="dataOfCityName" finished-at="2020-06-06T15:03:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyElectronicTabOnPage status=SUCCESS method=ActivitiesTest.verifyElectronicTabOnPage()[pri:10, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baltimore]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="beforeMethod" is-config="true" duration-ms="4655" started-at="2020-05-18T15:01:17Z" finished-at="2020-05-18T15:01:21Z">
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="closeBrowser" is-config="true" duration-ms="834" started-at="2020-06-06T15:03:15Z" finished-at="2020-06-06T15:03:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="verifyGiftOnPage()[pri:11, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="verifyGiftOnPage" duration-ms="1" started-at="2020-05-18T15:01:21Z" description="Verify Gift Tab functionality" finished-at="2020-05-18T15:01:21Z">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Skipping this one test. Hence not testing]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Skipping this one test. Hence not testing
-	at com.qa.Flipkart.ActivitiesTest.ActivitiesTest.verifyGiftOnPage(ActivitiesTest.java:172)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGiftOnPage -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="afterMethod" is-config="true" duration-ms="2" started-at="2020-05-18T15:01:21Z" finished-at="2020-05-18T15:01:21Z">
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.parallelTest.CityDegreeCheck.ParallelTest -->
+    </test> <!-- weather Check for City in chrome -->
+    <test name="weather Check for City in firefox" duration-ms="144149" started-at="2020-06-06T09:31:23Z" finished-at="2020-06-06T09:33:47Z">
+      <class name="com.qa.parallelTest.CityDegreeCheck.ParallelTest">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="initiateBrowser" is-config="true" duration-ms="12415" started-at="2020-06-06T15:01:23Z" finished-at="2020-06-06T15:01:36Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyGiftOnPage status=SKIP method=ActivitiesTest.verifyGiftOnPage()[pri:11, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab] output={null}]]]>
+                <![CDATA[ff]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.qa.Flipkart.ActivitiesTest.ActivitiesTest@16a51ab]" name="generateReport" is-config="true" duration-ms="1316" started-at="2020-05-18T15:01:21Z" finished-at="2020-05-18T15:01:23Z">
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="verifyCityName" duration-ms="2475" started-at="2020-06-06T15:01:36Z" data-provider="dataOfCityName" finished-at="2020-06-06T15:01:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- generateReport -->
-      </class> <!-- com.qa.Flipkart.ActivitiesTest.ActivitiesTest -->
-    </test> <!-- Flipkart Activities Test -->
-  </suite> <!-- Flipkart Activities Suite -->
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="closeBrowser" is-config="true" duration-ms="13500" started-at="2020-06-06T15:01:38Z" finished-at="2020-06-06T15:01:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="initiateBrowser" is-config="true" duration-ms="10499" started-at="2020-06-06T15:01:52Z" finished-at="2020-06-06T15:02:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="verifyCityName" duration-ms="2323" started-at="2020-06-06T15:02:02Z" data-provider="dataOfCityName" finished-at="2020-06-06T15:02:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Banda Aceh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="closeBrowser" is-config="true" duration-ms="9779" started-at="2020-06-06T15:02:04Z" finished-at="2020-06-06T15:02:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="initiateBrowser" is-config="true" duration-ms="12906" started-at="2020-06-06T15:02:14Z" finished-at="2020-06-06T15:02:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="verifyCityName" duration-ms="2276" started-at="2020-06-06T15:02:27Z" data-provider="dataOfCityName" finished-at="2020-06-06T15:02:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Badalona]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="closeBrowser" is-config="true" duration-ms="10870" started-at="2020-06-06T15:02:29Z" finished-at="2020-06-06T15:02:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="initiateBrowser" is-config="true" duration-ms="10916" started-at="2020-06-06T15:02:40Z" finished-at="2020-06-06T15:02:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="verifyCityName" duration-ms="2387" started-at="2020-06-06T15:02:51Z" data-provider="dataOfCityName" finished-at="2020-06-06T15:02:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bakersfield]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="closeBrowser" is-config="true" duration-ms="12896" started-at="2020-06-06T15:02:53Z" finished-at="2020-06-06T15:03:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="initiateBrowser" is-config="true" duration-ms="9768" started-at="2020-06-06T15:03:06Z" finished-at="2020-06-06T15:03:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="verifyCityName" duration-ms="2221" started-at="2020-06-06T15:03:16Z" data-provider="dataOfCityName" finished-at="2020-06-06T15:03:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baguio]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="closeBrowser" is-config="true" duration-ms="7234" started-at="2020-06-06T15:03:18Z" finished-at="2020-06-06T15:03:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="initiateBrowser" is-config="true" duration-ms="9548" started-at="2020-06-06T15:03:26Z" finished-at="2020-06-06T15:03:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="verifyCityName" duration-ms="2286" started-at="2020-06-06T15:03:35Z" data-provider="dataOfCityName" finished-at="2020-06-06T15:03:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baltimore]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="closeBrowser" is-config="true" duration-ms="9832" started-at="2020-06-06T15:03:37Z" finished-at="2020-06-06T15:03:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.parallelTest.CityDegreeCheck.ParallelTest -->
+    </test> <!-- weather Check for City in firefox -->
+  </suite> <!-- weather Check for City -->
 </testng-results>
