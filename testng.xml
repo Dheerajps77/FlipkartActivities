@@ -13,10 +13,7 @@
     <classes>
       <class name="com.qa.parallelTest.CityDegreeCheck.ParallelTest"/>
     </classes>
-  </test>
-  
-
-  
+  </test>  
   <!-- <test name="weather Check for City in ie">
   <parameter name="browser" value="ie"/>
     <classes>
