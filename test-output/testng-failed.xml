@@ -1,31 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [weather Check for City]" parallel="tests">
-  <parameter name="browser" value="ff"/>
-  <test name="weather Check for City in firefox(failed)" parallel="tests">
-    <parameter name="browser" value="ff"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <test name="Test(failed)" parallel="none">
     <classes>
-      <class name="com.qa.parallelTest.CityDegreeCheck.ParallelTest">
+      <class name="com.qa.parallelTest.CityDegreeCheck.ApachePOIWithDataProvider">
         <methods>
-          <include name="initiateBrowser"/>
-          <include name="initiateBrowser"/>
-          <include name="verifyCityName"/>
-          <include name="closeBrowser"/>
+          <include name="testValueFromApachePOI"/>
         </methods>
-      </class> <!-- com.qa.parallelTest.CityDegreeCheck.ParallelTest -->
+      </class> <!-- com.qa.parallelTest.CityDegreeCheck.ApachePOIWithDataProvider -->
     </classes>
-  </test> <!-- weather Check for City in firefox(failed) -->
-  <test name="weather Check for City in chrome(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.qa.parallelTest.CityDegreeCheck.ParallelTest">
-        <methods>
-          <include name="initiateBrowser"/>
-          <include name="initiateBrowser"/>
-          <include name="verifyCityName" invocation-numbers="5 0 3 1 4 2"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.qa.parallelTest.CityDegreeCheck.ParallelTest -->
-    </classes>
-  </test> <!-- weather Check for City in chrome(failed) -->
-</suite> <!-- Failed suite [weather Check for City] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
   <test name="Test(failed)" parallel="none">
     <classes>
-      <class name="com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI">
+      <class name="com.qa.parallelTest.CityDegreeCheck.ApachePOIWithDataProvider">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="loginWithDetails" invocation-numbers="0"/>
+          <include name="testValueFromApachePOI"/>
         </methods>
-      </class> <!-- com.qa.Flipkart.ActivitiesTest.DataDrivenWithoutApachePOI -->
+      </class> <!-- com.qa.parallelTest.CityDegreeCheck.ApachePOIWithDataProvider -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

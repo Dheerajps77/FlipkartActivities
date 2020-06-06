@@ -3,20 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.Flipkart.ActivitiesTest.ActivitiesTest">
+      <class name="com.qa.parallelTest.CityDegreeCheck.ApachePOIWithDataProvider">
         <methods>
-          <include name="verifyComputersTabOnPage"/>
-          <include name="verifyDownloadsTabOnPage"/>
-          <include name="verifyLogOutOnPage"/>
-          <include name="verifyAutoSuggestValueTest"/>
-          <include name="verifyProductsPriceTest"/>
-          <include name="verifyGiftOnPage"/>
-          <include name="verifyElectronicTabOnPage"/>
-          <include name="beforeMethod"/>
-          <include name="openingBrowser"/>
-          <include name="closeBrowser"/>
+          <include name="testValueFromApachePOI"/>
         </methods>
-      </class> <!-- com.qa.Flipkart.ActivitiesTest.ActivitiesTest -->
+      </class> <!-- com.qa.parallelTest.CityDegreeCheck.ApachePOIWithDataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
