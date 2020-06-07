@@ -1,0 +1,8 @@
+1.) Get to total count of Coloumn by using below xpath expression, please check attached screenshot
+	eg : //table[@name='BookTable']//tr
+
+2.) Now, Get the total count of Row, please check attached screenshot
+	eg : //table[@name='BookTable']//tr[2]//td
+	
+3.) Now wright below code which is mentioned in WebTableDemo.java class
+

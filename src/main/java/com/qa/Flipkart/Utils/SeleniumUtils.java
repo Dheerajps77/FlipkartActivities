@@ -91,7 +91,7 @@ public class SeleniumUtils {
 	{
 		ArrayList<String> arraylist;
 		List<WebElement> listOfElement;
-		List<WebElement> rowsOfElements;
+		//List<WebElement> rowsOfElements;
 		int countOfRows;
 		String productValue;
 		WebElement element;
