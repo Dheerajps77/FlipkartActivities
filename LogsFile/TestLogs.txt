@@ -3719,3 +3719,16 @@ Session ID: 12ac7cb51ba7b31e7c3930c30e054318
 2020-06-06 20:48:42 INFO  Logger:185 - Test verifyGiftOnPage module has been started
 2020-06-06 20:48:42 INFO  Logger:188 - Test verifyGiftOnPage module has been skipped
 2020-06-06 20:48:42 INFO  Logger:189 - org.testng.SkipException: Skipping this one test. Hence not testing
+2020-06-08 17:14:54 INFO  Logger:77 - Getting OS name
+2020-06-08 17:16:14 INFO  Logger:185 - Test verifyProductsNameTest module has been started
+2020-06-08 17:16:14 INFO  Logger:185 - Test verifyAutoSuggestValueTest module has been started
+2020-06-08 17:16:14 INFO  Logger:185 - Test verifyProductsPriceTest module has been started
+2020-06-08 17:16:14 INFO  Logger:185 - Test verifyRegisterationOnHomePage module has been started
+2020-06-08 17:16:14 INFO  Logger:185 - Test verifyContactListOnPage module has been started
+2020-06-08 17:16:14 INFO  Logger:185 - Test verifyForgetPasswordOnPage module has been started
+2020-06-08 17:16:14 INFO  Logger:185 - Test verifyRememberPasswordOnPage module has been started
+2020-06-08 17:16:14 INFO  Logger:185 - Test verifyLogOutOnPage module has been started
+2020-06-08 17:16:14 INFO  Logger:185 - Test verifyDownloadsTabOnPage module has been started
+2020-06-08 17:16:14 INFO  Logger:185 - Test verifyComputersTabOnPage module has been started
+2020-06-08 17:16:14 INFO  Logger:185 - Test verifyElectronicTabOnPage module has been started
+2020-06-08 17:16:14 INFO  Logger:185 - Test verifyGiftOnPage module has been started
