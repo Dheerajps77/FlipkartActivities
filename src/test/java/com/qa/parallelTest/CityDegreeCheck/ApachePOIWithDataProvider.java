@@ -78,7 +78,7 @@ public class ApachePOIWithDataProvider {
 					if (cell.getCellType() == cell.CELL_TYPE_STRING) {
 						data[i - 1][j] = cell.getStringCellValue();
 					} else {
-						data[i = 1][j] = String.valueOf(cell.getNumericCellValue());
+						data[i - 1][j] = String.valueOf(cell.getNumericCellValue());
 					}
 				}
 			}

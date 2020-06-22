@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="weather Check for City" thread-count="2">
+  <test name="weather Check for City in chrome" parallel="none">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.parallelTest.CityDegreeCheck.ParallelTest"/>
+    </classes>
+  </test>
+
+<test name="weather Check for City in firefox">
+  <parameter name="browser" value="ff"/>
+    <classes>
+      <class name="com.qa.parallelTest.CityDegreeCheck.ParallelTest"/>
+    </classes>
+  </test>  
+  <!-- <test name="weather Check for City in ie">
+  <parameter name="browser" value="ie"/>
+    <classes>
+      <class name="com.qa.parallelTest.CityDegreeCheck.ParallelTest"/>
+    </classes>
+  </test>
+  
+  <test name="weather Check for City in edge">
+  <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.qa.parallelTest.CityDegreeCheck.ParallelTest"/>
+    </classes>
+  </test> 
+ -->  
+</suite>

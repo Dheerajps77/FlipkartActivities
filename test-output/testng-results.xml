@@ -1,72 +1,389 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22611" started-at="2020-06-09T15:06:14Z" finished-at="2020-06-09T15:06:37Z">
+  <suite name="weather Check for City" duration-ms="156122" started-at="2020-06-22T13:49:57Z" finished-at="2020-06-22T13:52:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22611" started-at="2020-06-09T15:06:14Z" finished-at="2020-06-09T15:06:37Z">
-      <class name="googlePlayStore.GooglePlayStoreTask">
-        <test-method status="PASS" signature="initiateBrowser()[pri:0, instance:googlePlayStore.GooglePlayStoreTask@82df6a]" name="initiateBrowser" is-config="true" duration-ms="14430" started-at="2020-06-09T20:36:00Z" finished-at="2020-06-09T20:36:14Z">
+    <test name="weather Check for City in chrome" duration-ms="120714" started-at="2020-06-22T13:49:57Z" finished-at="2020-06-22T13:51:57Z">
+      <class name="com.qa.parallelTest.CityDegreeCheck.ParallelTest">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="initiateBrowser" is-config="true" duration-ms="15248" started-at="2020-06-22T19:19:57Z" finished-at="2020-06-22T19:20:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateBrowser -->
-        <test-method status="FAIL" signature="clickOnEachListValue()[pri:0, instance:googlePlayStore.GooglePlayStoreTask@82df6a]" name="clickOnEachListValue" duration-ms="22553" started-at="2020-06-09T20:36:14Z" finished-at="2020-06-09T20:36:37Z">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='JRhuKe']//button (tried for 10 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //div[@class='JRhuKe']//button (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
-	at com.qa.Flipkart.Utils.SeleniumUtils.waitForElementPresence(SeleniumUtils.java:180)
-	at googlePlayStore.GooglePlayStoreTask.appButton(GooglePlayStoreTask.java:24)
-	at googlePlayStore.GooglePlayStoreTask.clickOnEachListValue(GooglePlayStoreTask.java:127)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-	at org.testng.TestNG.run(TestNG.java:1048)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //div[@class='JRhuKe']//button
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:24:21.231Z'
-System info: host: 'DESKTOP-MFEMF1B', ip: '192.168.0.108', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.util.Optional.orElseThrow(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
-	... 27 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="verifyCityName" duration-ms="5550" started-at="2020-06-22T19:20:12Z" data-provider="dataOfCityName" finished-at="2020-06-22T19:20:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnEachListValue -->
-      </class> <!-- googlePlayStore.GooglePlayStoreTask -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="closeBrowser" is-config="true" duration-ms="1178" started-at="2020-06-22T19:20:17Z" finished-at="2020-06-22T19:20:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="initiateBrowser" is-config="true" duration-ms="14072" started-at="2020-06-22T19:20:19Z" finished-at="2020-06-22T19:20:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="verifyCityName" duration-ms="5253" started-at="2020-06-22T19:20:33Z" data-provider="dataOfCityName" finished-at="2020-06-22T19:20:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Banda Aceh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="closeBrowser" is-config="true" duration-ms="807" started-at="2020-06-22T19:20:38Z" finished-at="2020-06-22T19:20:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="initiateBrowser" is-config="true" duration-ms="11845" started-at="2020-06-22T19:20:39Z" finished-at="2020-06-22T19:20:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="verifyCityName" duration-ms="4780" started-at="2020-06-22T19:20:50Z" data-provider="dataOfCityName" finished-at="2020-06-22T19:20:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Badalona]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="closeBrowser" is-config="true" duration-ms="1380" started-at="2020-06-22T19:20:55Z" finished-at="2020-06-22T19:20:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="initiateBrowser" is-config="true" duration-ms="12871" started-at="2020-06-22T19:20:57Z" finished-at="2020-06-22T19:21:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="verifyCityName" duration-ms="5334" started-at="2020-06-22T19:21:10Z" data-provider="dataOfCityName" finished-at="2020-06-22T19:21:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bakersfield]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="closeBrowser" is-config="true" duration-ms="1708" started-at="2020-06-22T19:21:15Z" finished-at="2020-06-22T19:21:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="initiateBrowser" is-config="true" duration-ms="12460" started-at="2020-06-22T19:21:17Z" finished-at="2020-06-22T19:21:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="verifyCityName" duration-ms="5129" started-at="2020-06-22T19:21:29Z" data-provider="dataOfCityName" finished-at="2020-06-22T19:21:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baguio]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="closeBrowser" is-config="true" duration-ms="1427" started-at="2020-06-22T19:21:34Z" finished-at="2020-06-22T19:21:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="initiateBrowser" is-config="true" duration-ms="13187" started-at="2020-06-22T19:21:36Z" finished-at="2020-06-22T19:21:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="verifyCityName" duration-ms="7583" started-at="2020-06-22T19:21:49Z" data-provider="dataOfCityName" finished-at="2020-06-22T19:21:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baltimore]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@c87b21]" name="closeBrowser" is-config="true" duration-ms="875" started-at="2020-06-22T19:21:56Z" finished-at="2020-06-22T19:21:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.parallelTest.CityDegreeCheck.ParallelTest -->
+    </test> <!-- weather Check for City in chrome -->
+    <test name="weather Check for City in firefox" duration-ms="156122" started-at="2020-06-22T13:49:57Z" finished-at="2020-06-22T13:52:33Z">
+      <class name="com.qa.parallelTest.CityDegreeCheck.ParallelTest">
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="initiateBrowser" is-config="true" duration-ms="15297" started-at="2020-06-22T19:19:57Z" finished-at="2020-06-22T19:20:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="verifyCityName" duration-ms="2406" started-at="2020-06-22T19:20:12Z" data-provider="dataOfCityName" finished-at="2020-06-22T19:20:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Delhi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="closeBrowser" is-config="true" duration-ms="9285" started-at="2020-06-22T19:20:14Z" finished-at="2020-06-22T19:20:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="initiateBrowser" is-config="true" duration-ms="13674" started-at="2020-06-22T19:20:24Z" finished-at="2020-06-22T19:20:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="verifyCityName" duration-ms="2295" started-at="2020-06-22T19:20:37Z" data-provider="dataOfCityName" finished-at="2020-06-22T19:20:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Banda Aceh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="closeBrowser" is-config="true" duration-ms="11458" started-at="2020-06-22T19:20:40Z" finished-at="2020-06-22T19:20:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="initiateBrowser" is-config="true" duration-ms="13823" started-at="2020-06-22T19:20:51Z" finished-at="2020-06-22T19:21:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="verifyCityName" duration-ms="2342" started-at="2020-06-22T19:21:05Z" data-provider="dataOfCityName" finished-at="2020-06-22T19:21:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Badalona]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="closeBrowser" is-config="true" duration-ms="10327" started-at="2020-06-22T19:21:07Z" finished-at="2020-06-22T19:21:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="initiateBrowser" is-config="true" duration-ms="12472" started-at="2020-06-22T19:21:17Z" finished-at="2020-06-22T19:21:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="verifyCityName" duration-ms="2441" started-at="2020-06-22T19:21:30Z" data-provider="dataOfCityName" finished-at="2020-06-22T19:21:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Bakersfield]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="closeBrowser" is-config="true" duration-ms="12857" started-at="2020-06-22T19:21:32Z" finished-at="2020-06-22T19:21:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="initiateBrowser" is-config="true" duration-ms="15967" started-at="2020-06-22T19:21:45Z" finished-at="2020-06-22T19:22:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="verifyCityName" duration-ms="2338" started-at="2020-06-22T19:22:01Z" data-provider="dataOfCityName" finished-at="2020-06-22T19:22:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baguio]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="closeBrowser" is-config="true" duration-ms="7397" started-at="2020-06-22T19:22:04Z" finished-at="2020-06-22T19:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="initiateBrowser(java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="initiateBrowser" is-config="true" duration-ms="11583" started-at="2020-06-22T19:22:11Z" finished-at="2020-06-22T19:22:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateBrowser -->
+        <test-method status="PASS" signature="verifyCityName(java.lang.String, java.lang.String)[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="verifyCityName" duration-ms="2475" started-at="2020-06-22T19:22:23Z" data-provider="dataOfCityName" finished-at="2020-06-22T19:22:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[weather in  ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Baltimore]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCityName -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.qa.parallelTest.CityDegreeCheck.ParallelTest@19f379]" name="closeBrowser" is-config="true" duration-ms="7661" started-at="2020-06-22T19:22:25Z" finished-at="2020-06-22T19:22:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.qa.parallelTest.CityDegreeCheck.ParallelTest -->
+    </test> <!-- weather Check for City in firefox -->
+  </suite> <!-- weather Check for City -->
 </testng-results>
