@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="weather Check for City" thread-count="2">
-  <test name="weather Check for City in chrome" parallel="tests" thread-count="2">
+  <test name="weather Check for City in chrome">
   <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.qa.parallelTest.CityDegreeCheck.ParallelTest"/>
